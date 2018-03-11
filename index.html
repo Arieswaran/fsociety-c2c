@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>fsociety</title>
+	</head>
+	<body style='height:150%;width:100%;color:gold;background-image:url(bg7.jpg);overflow:auto'>
+		<center>
+			<h1 style="color:lawngreen;"clean my city</h1> Clean my city</h1> 
+			<font face="Comic Sans MS" size="4">
+			<h2 style="color:black;"the world is...</h2>The world is a dangerous place to live; <br>not because of the people who are evil, <br>but because of the people who don't do anything about it.</h2>
+			</font><br>
+			<form action='store.php' method='POST' enctype="multipart/form-data">
+				<font face="Acme" size="1"><b>
+				<div style="font-size:25px">
+					<table cellspacing:"30" style="font-size:25px;font-weight:bold">
+						<tr>
+							<td>First name</td><td><input type="text" name="name" required></td>
+						</tr>
+						<tr>
+							<td>City</td><td><select name="city" required>
+								<option>Vellore</option>
+								<option>salem</option>
+								<option>karur</option>
+								<option>chennai</option> 
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Landmark</td><td><input type="text" name="landmark" required/></td>
+						</tr>
+					</table>
+					<br>
+
+					level of wastage:<br>
+					low<input type='range' min='1' max='99' value='50' name='level'>high
+					<br>
+					<button type='button' onclick="myfunction()">Advanced options</button>
+					<br>
+					<div id='advance' style="display:none">
+
+						Issue type
+						<br>
+						<input type="checkbox" name="garbage"> Garbage
+						<input type="checkbox" name="drainage_water"> drainage
+						<input type="checkbox" name="others">others
+						<br><br>
+						<p> upload your pictures here.</p>
+						<input type="file" name="fileupload" accept="image/*">
+					</div>
+					<br>
+					<input type="submit" value='submit'>
+				</div>
+				</b>
+				</font>
+			</form>
+		</center>
+<style>
+td{
+	padding-bottom: 10;
+}
+</style>
+<script>
+function myfunction(){
+var x=document.getElementById("advance");
+if(x.style.display==="none"){
+x.style.display="block";}
+else{
+x.style.display="none";
+}
+}
+</script>
+	</body>
+</html>
